@@ -8,7 +8,6 @@ import java.util.List;
 
 
 public class Frame {
-    private List<Currency> currencies = new ArrayList<Currency>();
     private String currentCurrency = "USD";
     private double SGD = 41.36, KWD = 184.38, AUD = 38.30, BND = 41.34, NZD = 35.44, USD = 56.73;
     private JFrame frame;
@@ -110,7 +109,6 @@ public class Frame {
             }
         });
 
-
         frame.add(txtField1);
         frame.add(txtField2);
         frame.add(convertBtn);
@@ -121,34 +119,10 @@ public class Frame {
         frame.add(sgdBtn);
         frame.add(bndBtn);
 
-//        JOptionPane.showMessageDialog(null,"java is fun","Title",1);
         frame.setSize(420, 230);
         frame.setLayout(null);
         frame.setVisible(true);
     }
-
-//    private void addCurrencyBtn() {
-//        System.out.println(1);
-//        System.out.println(currencies);
-//        int counter = 1;
-//        int layer = 100;
-//        for (Currency tempCurrency : this.currencies) {
-//            JButton temp = new JButton(tempCurrency.getSign());
-//            temp.setBounds(counter * 80 + 10, layer, 65, 20);
-//
-//            temp.addActionListener(new ActionListener() {
-//                public void actionPerformed(ActionEvent e) {
-//                    addCurrency("PHP");
-//                }
-//            });
-//
-//            this.frame.add(temp);
-//        }
-////        JButton temp = new JButton(sign);
-////        temp.setBounds(325, 100, 65, 20);
-//
-//
-//    }
 
     private void addCurrency(String currency) {
         currentCurrency = currency;
